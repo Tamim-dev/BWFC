@@ -30,7 +30,6 @@ const Account = () => {
         <Flax>
         <div className="w-3/6">
             <h4>{accountData.subTitle}</h4>
-            <h3>HI</h3>
             <h2>{accountData.title}</h2>
             <p>{accountData.paragraph}</p>
             <Button>{accountData.button.text}</Button>
