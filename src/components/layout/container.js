@@ -1,9 +1,11 @@
 import React from "react";
 
-const container = () => {
+const Container = ({children}) => {
   return (
-    <container className="container mx-auto mt-20 flex"></container>
+    <div className = " container mx-auto mt-7">
+        {children}
+    </div>
   );
 };
 
-export default container;
+export default Container;

@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import {FaPlay} from 'react-icons/fa'
+import Container from "./layout/Container";
 
 const Banner = () => {
     let [bannerData,setbannerData]=useState({})
@@ -20,9 +21,10 @@ const Banner = () => {
     }
 
   return (
-    <section className="relative">
-    <img src={bannerData.bannerbgshape} className='absolute z-z1 top-[-50px]'/>
-        <div className="container mx-auto mt-20 flex">
+    <section className="relative bg-no-repeat" style={{backgroundImage : `url(${bannerData.bannerbgshape})`}}>
+    
+        <Container>
+        <div className="flex">
             <div className="w-3/6 mt-24">
                 <h1 className="font-manFont leading-[80px] w-[644px] text-6xl font-extrabold tracking-tighter">{bannerData.bannerheading}</h1>
                 <p className="font-manFont text-[#64607D] w-[461px] text-xl my-6">{bannerData.bannerparagraph}</p>
@@ -33,6 +35,7 @@ const Banner = () => {
             </div>
             <div className="w-3/6"><img className="absolute right-0" src={bannerData.bannerrightimg}/></div>
         </div>
+        </Container>
     </section>
   );
 };
