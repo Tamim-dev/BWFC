@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import Container from "./layout/Container";
+import Button from "./layout/Button";
 
 const Feature = () => {
 
@@ -28,7 +29,7 @@ const Feature = () => {
                 <h4 className="text-primary text-lg font-manFont font-extrabold">{featureData.subTitle}</h4>
                 <h2 className="font-manFont font-bold text-50px leading-l_h56 tracking-tighter mt-6 mb-9">{featureData.title}</h2>
                 <p className="text-second text-lg font-manFont mb-7">{featureData.paragraph}</p>
-                <a href="#" className="py-4 px-9 bg-primary font-manFont font-bold text-white  rounded-3xl border border-primary inline-block items-center hover:bg-transparent hover:text-primary transition ease-in-out delay-150">{featureData.button.text}</a>
+                <Button>{featureData.button.text}</Button>
             </div>
         </div>
         </Container>
