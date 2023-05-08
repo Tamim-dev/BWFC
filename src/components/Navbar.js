@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import {FaAngleDown} from 'react-icons/fa'
 import Container from './layout/Container'
+import Flax from './layout/Flax'
 
 
 
@@ -27,7 +28,8 @@ const Navbar = () => {
     
     
     <Container>
-    <div className='flex items-center h-14'>
+    <Flax>
+    <div className='items-center h-14'>
     <div className='w-3/12 flex'><img src={navberData.logo}/></div>
     <div className='w-[41%] flex justify-center'>
         <ul className=' flex items-center  gap-20 font-manFont font-bold text-sm'>
@@ -58,6 +60,7 @@ const Navbar = () => {
             <a href='#' className='bg-primary text-white font-manFont text-sm font-semibold py-4 px-9 rounded-lg border border-primary hover:bg-transparent hover:text-primary transition ease-in-out delay-150'>{navberData.buttonThree.text}</a>}
     </div>
     </div>
+    </Flax>
     </Container>
     
         

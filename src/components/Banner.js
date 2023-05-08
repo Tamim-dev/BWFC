@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import {FaPlay} from 'react-icons/fa'
 import Container from "./layout/Container";
 import Button from "./layout/Button";
+import Flax from "./layout/Flax";
 
 const Banner = () => {
     let [bannerData,setbannerData]=useState({})
@@ -25,7 +26,7 @@ const Banner = () => {
     <section className="relative bg-no-repeat" style={{backgroundImage : `url(${bannerData.bannerbgshape})`}}>
     
         <Container>
-        <div className="flex">
+        <Flax>
             <div className="w-3/6 mt-24">
                 <h1 className="font-manFont leading-[80px] w-[644px] text-6xl font-extrabold tracking-tighter">{bannerData.bannerheading}</h1>
                 <p className="font-manFont text-[#64607D] w-[461px] text-xl my-6">{bannerData.bannerparagraph}</p>
@@ -35,7 +36,7 @@ const Banner = () => {
                 </div>
             </div>
             <div className="w-3/6"><img className="absolute right-0" src={bannerData.bannerrightimg}/></div>
-        </div>
+        </Flax>
         </Container>
     </section>
   );

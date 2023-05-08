@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import Container from "./layout/Container";
 import Button from "./layout/Button";
+import Flax from "./layout/Flax";
 
 const Feature = () => {
 
@@ -23,7 +24,7 @@ const Feature = () => {
   return(
     <section className="mt-24 relative bg-no-repeat" style={{backgroundImage:`url(${featureData.featureShape})`}}>
         <Container>
-        <div className="flex">
+        <Flax>
             <div className="w-6/12"><img src={featureData.featureImage}/></div>
             <div className="w-6/12">
                 <h4 className="text-primary text-lg font-manFont font-extrabold">{featureData.subTitle}</h4>
@@ -31,7 +32,7 @@ const Feature = () => {
                 <p className="text-second text-lg font-manFont mb-7">{featureData.paragraph}</p>
                 <Button>{featureData.button.text}</Button>
             </div>
-        </div>
+        </Flax>
         </Container>
     </section>
   );
