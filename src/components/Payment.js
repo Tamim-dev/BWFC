@@ -23,7 +23,8 @@ const Payment = () => {
   return(
     <section className="mt-16 relative">
         <img className="absolute top-[-20px] right-10" src={paymentData.paymentShape}/>
-        <div className="container mx-auto bg-third rounded-3xl px-16 py-[75px]">
+        <Container>
+        <div className=" bg-third rounded-3xl px-16 py-[75px]">
             <div className="w-6/12">
             <h4 className="text-primary text-lg font-manFont font-extrabold">{paymentData.subTitle}</h4>
             <h2 className="w-[565px] font-manFont font-bold text-50px leading-l_h56 tracking-tighter mt-6 mb-9">{paymentData.title}</h2>
