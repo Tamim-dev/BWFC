@@ -1,8 +1,10 @@
 import React from "react";
 
-const container = () => {
+const container = ({children}) => {
   return (
-    <container className="container mx-auto mt-20 flex"></container>
+    <div className="container mx-auto mt-20 flex">
+    {children}
+    </div>
   );
 };
 

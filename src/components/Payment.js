@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState } from "react";
+import Container from "./layout/Container";
 
 const Payment = () => {
 
@@ -28,8 +29,14 @@ const Payment = () => {
             <h2 className="w-[565px] font-manFont font-bold text-50px leading-l_h56 tracking-tighter mt-6 mb-9">{paymentData.title}</h2>
             <p className="text-second text-lg font-manFont mb-7">{paymentData.paragraph}</p>
             </div>
-            <div className="w-6/12"></div>
+            <div className="w-6/12 pl-16">
+                <h4 className="text-primary text-lg font-manFont font-extrabold">Get Started for Free</h4>
+                <input placeholder="Email Address" className="font-manFont block w-96 h-16 pl-5 rounded-md my-6"/>
+                <input type="password" placeholder="Password" className="font-manFont block w-96 h-16 pl-5 rounded-md my-6"/>
+                <button className="w-96 font-manFont bg-[#FF7F5C] py-4 rounded-md text-white font-bold text-base hover:bg-[#fb7550]">GET STARTED</button>
+            </div>
         </div>
+        </Container>
     </section>
   );
 };
