@@ -3,7 +3,6 @@ import Container from "./layout/Container";
 import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
-import Flax from "./layout/Flax";
 import Button from "./layout/Button";
 
 const Account = () => {
@@ -27,7 +26,7 @@ const Account = () => {
   return (
     <section>
         <Container>
-        <Flax>
+        <div className="flex">
         <div className="w-3/6">
             <h4>{accountData.subTitle}</h4>
             <h3>Hello Tamim</h3>
@@ -38,7 +37,7 @@ const Account = () => {
         <div className="w-3/6">
             <img src={accountData.accountImage}/>
         </div>
-        </Flax>
+        </div>
         </Container>
     </section>
   );
