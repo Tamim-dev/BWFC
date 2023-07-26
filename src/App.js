@@ -5,6 +5,7 @@ import Feature from './components/Feature';
 import Navbar from './components/Navbar';
 import Payment from './components/Payment';
 import Sponsor from './components/Sponsor';
+import Testimonials from './components/Testimonials';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <Feature/>
     <Payment/>
     <Account/>
+    <Testimonials/>
     </>
   );
 }

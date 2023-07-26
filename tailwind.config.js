@@ -19,7 +19,8 @@ module.exports = {
       colors:{
         'primary':'#3734A9',
         'second':'#757095',
-        'third':'#F3F7FA'
+        'third':'#F3F7FA',
+        'btncolor':"#FF7F5C",
       },
       zIndex: {
         'z1': '-1',

@@ -4,6 +4,9 @@ import { useState } from "react";
 import { useEffect } from "react";
 import axios from "axios";
 import Button from "./layout/Button";
+import Heading from "./layout/Heading";
+import Title from "./layout/Title";
+import Paragraph from "./layout/Paragraph";
 
 const Account = () => {
 
@@ -24,14 +27,13 @@ const Account = () => {
   }
 
   return (
-    <section>
+    <section className=" mt-24">
         <Container>
         <div className="flex">
         <div className="w-3/6">
-            <h4>{accountData.subTitle}</h4>
-            <h3>Hello Tamim</h3>
-            <h2>{accountData.title}</h2>
-            <p>{accountData.paragraph}</p>
+            <Title text={accountData.subTitle}/>
+            <Heading text={accountData.title}/>
+            <Paragraph text={accountData.paragraph}/>
             <Button>{accountData.button.text}</Button>
         </div>
         <div className="w-3/6">
