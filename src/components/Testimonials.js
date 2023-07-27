@@ -228,7 +228,7 @@ const Testimonials = () => {
                 </div>
                 </>
                 </Slider>
-                <div className="flex justify-center">
+                <div className="flex mt-6">
                     <BsArrowLeft onClick={() => slider?.current?.slickPrev()} className=" text-black w-9 h-9 rounded-full mr-8 p-1.5 hover:bg-primary hover:text-white" />
                     <BsArrowRight onClick={() => slider?.current?.slickNext()} className=" text-black w-9 h-9 rounded-full p-1.5 hover:bg-primary hover:text-white" />
                 </div>
