@@ -34,7 +34,7 @@ const Finance = () => {
     <div className=" w-3/4">
     <Title text={financeData.sunbTitle}/>
     <Heading text={financeData.heading}/>
-    <Paragraph text={financeData.paragraph}/>
+    <Paragraph className={"w-[512px]"} text={financeData.paragraph}/>
     <Button>{financeData.button.text}</Button>
     </div>
     <div className=" w-3/4 flex justify-center">

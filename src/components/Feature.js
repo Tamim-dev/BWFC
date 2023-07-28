@@ -35,7 +35,7 @@ const Feature = () => {
                     <div className="w-6/12">
                         <Title text={featureData.subTitle} />
                         <Heading text={featureData.title}/>
-                        <Paragraph text={featureData.paragraph}/>
+                        <Paragraph className={"w-[512px]"} text={featureData.paragraph}/>
                         <Button>{featureData.button.text}</Button>
                     </div>
                 </div>

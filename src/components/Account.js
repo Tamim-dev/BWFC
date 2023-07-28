@@ -33,7 +33,7 @@ const Account = () => {
         <div className="w-3/6">
             <Title text={accountData.subTitle}/>
             <Heading text={accountData.title}/>
-            <Paragraph text={accountData.paragraph}/>
+            <Paragraph className={'w-[516px]'} text={accountData.paragraph}/>
             <Button>{accountData.button.text}</Button>
         </div>
         <div className="w-3/6">

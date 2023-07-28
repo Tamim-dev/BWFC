@@ -31,7 +31,7 @@ const Payment = () => {
                     <div className="w-6/12">
                         <Title text={paymentData.subTitle} />
                         <Heading text={paymentData.title} />
-                        <Paragraph text={paymentData.paragraph} />
+                        <Paragraph className={"w-[512px]"} text={paymentData.paragraph} />
                     </div>
                     <div className="w-6/12 pl-16">
                         <img

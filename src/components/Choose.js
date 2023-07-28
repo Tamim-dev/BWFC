@@ -29,7 +29,7 @@ const Choose = () => {
                         <Title className="flex justify-center items-center " text={chooseData.subTitle} />
                         <Heading className="w-full flex justify-center items-center " text={chooseData.title} />
                   
-                    <div className=" flex justify-between flex-wrap gap-y-10">
+                    <div className=" flex justify-between flex-wrap gap-y-10 mt-16">
                         {chooseData.items.map(
                             (item) =>
                                 item.visibility && (
