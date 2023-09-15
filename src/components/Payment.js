@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Container from "./layout/Container";
 import Title from "./layout/Title";
 import Heading from "./layout/Heading";
@@ -9,7 +9,7 @@ const Payment = () => {
     let [paymentData, setpaymentData] = useState({});
     let [loding, setloding] = useState(true);
 
-    useState(() => {
+    useEffect(() => {
         async function pay() {
             let payData = await axios.get(
                 "https://bwfc-api.vercel.app/payment"

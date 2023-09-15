@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Container from "./layout/Container";
 import Title from "./layout/Title";
 import Heading from "./layout/Heading";
@@ -106,7 +106,7 @@ const Testimonials = () => {
         ),
     };
 
-    useState(() => {
+    useEffect(() => {
         async function test() {
             let testData = await axios.get(
                 "https://bwfc-api.vercel.app/client"

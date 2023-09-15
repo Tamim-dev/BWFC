@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Container from "./layout/Container";
 
 const Sponsor = () => {
@@ -7,7 +7,7 @@ const Sponsor = () => {
     let [sponsor,setSponsor]=useState({})
     let [loding,setloding] = useState(true)
 
-    useState(()=>{
+    useEffect(()=>{
         async function spon(){
             let sponData = await axios.get("https://bwfc-api.vercel.app/sponsor")
             setSponsor(sponData.data)

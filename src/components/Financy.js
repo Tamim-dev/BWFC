@@ -1,12 +1,12 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Container from "./layout/Container";
 
 const Financy = () => {
     let [financyData, setFinancyData] = useState({});
     let [loding, setloding] = useState(true);
 
-    useState(() => {
+    useEffect(() => {
         async function data() {
             let fiData = await axios.get(
                 "https://bwfc-api.vercel.app/residence"

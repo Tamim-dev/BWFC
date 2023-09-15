@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Container from "./layout/Container";
 import Button from "./layout/Button";
 import Title from "./layout/Title";
@@ -10,7 +10,7 @@ const Feature = () => {
     let [featureData, setfeatureData] = useState({});
     let [loding, setloding] = useState(true);
 
-    useState(() => {
+    useEffect(() => {
         async function fea() {
             let feature = await axios.get(
                 "https://bwfc-api.vercel.app/feature"

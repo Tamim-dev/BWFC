@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaPlay } from "react-icons/fa";
 import Container from "./layout/Container";
 import Button from "./layout/Button";
@@ -8,7 +8,7 @@ const Banner = () => {
     let [bannerData, setbannerData] = useState({});
     let [loding, setloding] = useState(true);
 
-    useState(() => {
+    useEffect(() => {
         async function ban() {
             let baData = await axios.get("https://bwfc-api.vercel.app/banner");
             setbannerData(baData.data);
@@ -18,7 +18,9 @@ const Banner = () => {
     }, []);
 
     if (loding) {
-        return;
+        return(
+            <p>loding....</p>
+        )
     }
 
     return (
